@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import NavbarMenu from "@/components/NavbarMenu";
+import type { Metadata } from 'next';
+import './globals.css';
+import NavbarMenu from '@/components/NavbarMenu';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: "GreenLife Store",
+  title: 'GreenLife Store',
 };
 
 export default function RootLayout({
@@ -12,12 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
-        <>
-          <NavbarMenu />
-          {children}
-        </>
+        <NavbarMenu />
+        {children}
+        <Footer />
       </body>
     </html>
   );
