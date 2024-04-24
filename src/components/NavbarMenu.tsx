@@ -6,13 +6,25 @@ import { FaHeart } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import avatar from '@/assets/avatar.png';
+import icon from '@/assets/icon.png';
 import { useEffect, useState } from 'react';
 
 const NavbarMenu = () => {
   const [isLoged, setIsLoged] = useState<boolean>(true);
   return (
     <nav className='w-full border-[red] border p-6 flex items-center justify-between'>
-      <p>ICON</p>
+      <div className='flex items-center gap-1'>
+        <Image
+          src={icon}
+          alt='icon-img'
+          width={30}
+          height={30}
+        />
+        <span className='font-semibold font-serif italic'>
+          <strong className='text-xl text-blue-500'>G</strong>reen
+          <strong className='text-xl text-blue-500'>L</strong>ife
+        </span>
+      </div>
       <div className='gap-5 relative left-10 flex flex-col justify-center items-center'>
         <ul className='flex justify-center border border-[blue] w-max gap-5 '>
           <li className='border p-3 rounded-lg cursor-pointer'>

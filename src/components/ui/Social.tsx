@@ -4,7 +4,6 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { BsWhatsapp } from 'react-icons/bs';
 import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
-import './test.css';
 
 const SocialNetworks = () => {
   return (
@@ -22,7 +21,7 @@ const SocialNetworks = () => {
         <Link
           aria-label='social-network'
           href=''
-          className='text-xl relative duration-300 hover:text-slate-50 after:absolute after:left-[-0.55em] after:top-[-0.5em] after:p-[1em] after:w-[120%] after:h-[100%] after:bg-transparent after:rounded-[30px] after:duration-300 after:-z-10 hover:after:bg-[#ff00ae49] hover:after:duration-300'
+          className='text-xl relative duration-300 hover:text-slate-50 after:absolute after:left-[-0.55em] after:top-[-0.5em] after:p-[1em] after:w-[120%] after:h-[100%] after:bg-transparent after:rounded-[30px] after:duration-300 after:-z-10 hover:after:bg-[#db48ada9] hover:after:duration-300'
           target='_blank'>
           <GrInstagram />
         </Link>
