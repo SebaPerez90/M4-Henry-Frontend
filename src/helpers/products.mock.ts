@@ -35,7 +35,7 @@ export const productsToPreLoad: IProduct[] = [
     price: 8000,
     category: 'laptops',
     imgURL:
-      ' https://http2.mlstatic.com/D_NQ_NP_733580-MLA72063241888_102023-O.webp',
+      'https://http2.mlstatic.com/D_NQ_NP_733580-MLA72063241888_102023-O.webp',
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ export const productsToPreLoad: IProduct[] = [
     category: 'ipads',
     express: 'ENVIO GRATIS',
     imgURL:
-      ' https://http2.mlstatic.com/D_NQ_NP_606698-MLU74678792835_022024-O.webp',
+      'https://http2.mlstatic.com/D_NQ_NP_606698-MLU74678792835_022024-O.webp',
   },
   {
     id: 6,

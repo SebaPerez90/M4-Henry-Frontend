@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = {};
+
+module.exports = {
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'http2.mlstatic.com',
         port: '',
-        pathname: '/account123/**',
+        pathname: '/**',
       },
     ],
   },

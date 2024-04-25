@@ -37,11 +37,10 @@ const Card = () => {
           <div className='h-full w-full'>
             <Image
               // src={card_img}
-              src={item.imgURL}
+              src='https://http2.mlstatic.com/D_NQ_NP_809326-MLA46115014340_052021-O.webp'
+              alt='test'
               width={300}
               height={300}
-              // src='https://hips.hearstapps.com/hmg-prod/images/gettyimages-1422023439-64f1eaf518ace.jpg?crop=0.665xw:0.998xh;0.0641xw,0&resize=1200:*'
-              alt='card-image'
               className='w-full h-full object-cover rounded-lg'
             />
           </div>
