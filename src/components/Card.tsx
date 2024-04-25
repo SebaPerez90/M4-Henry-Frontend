@@ -11,6 +11,7 @@ import { productsToPreLoad } from '@/helpers/products.mock';
 
 const Card = () => {
   const [favorite, setFavorite] = useState<boolean>(true);
+  const [discount, setDiscount] = useState<number | null>(null);
 
   return (
     <>
@@ -47,15 +48,15 @@ const Card = () => {
             <span className='text-lg font-semibold'>{item.name}</span>
             <div className='flex gap-2 items-center font-semibold'>
               <span className='text-2xl'>${item.price}</span>
-              {item.old_price && (
+              {item.discount && (
                 <span className='[text-decoration:line-through] text-slate-400 text-lg'>
-                  $ 32.0000
+                  {((item.price * item.discount) / 100) + item.price}
                 </span>
               )}
             </div>
             <span className='text-gray-500'>{item.category}</span>
             {item.express && (
-              <span className='text-red-500'>{item.express}</span>
+              <span className='text-red-500 font-semibold'>{item.express}</span>
             )}
 
             <Button
