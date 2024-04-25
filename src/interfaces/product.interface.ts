@@ -5,6 +5,6 @@ export interface IProduct {
   price: number;
   category: string;
   discount?: number;
-  offer_price?: number;
+  old_price?: number;
   express?: string;
 }

@@ -1,10 +1,11 @@
-import { IProduct } from "@/interfaces/product.interface";
+import { IProduct } from '@/interfaces/product.interface';
 
 export const productsToPreLoad: IProduct[] = [
   {
     id: 1,
     name: 'iPhone 11',
     price: 30000,
+    discount: 25,
     category: 'phones',
     express: 'ENVIO GRATIS',
     imgURL:
@@ -22,6 +23,7 @@ export const productsToPreLoad: IProduct[] = [
     id: 3,
     name: 'iPad Pro',
     price: 12000,
+    discount: 10,
     category: 'ipads',
     express: 'ENVIO GRATIS',
     imgURL:
@@ -39,6 +41,7 @@ export const productsToPreLoad: IProduct[] = [
     id: 5,
     name: 'AirPods Pro',
     price: 2000,
+    discount: 30,
     category: 'ipads',
     express: 'ENVIO GRATIS',
     imgURL:
