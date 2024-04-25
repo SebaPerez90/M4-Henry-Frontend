@@ -11,14 +11,13 @@ import { productsToPreLoad } from '@/helpers/products.mock';
 
 const Card = () => {
   const [favorite, setFavorite] = useState<boolean>(true);
-  const [discount, setDiscount] = useState<number | null>(null);
 
   return (
     <>
       {productsToPreLoad.map((item) => (
         <div
           key={item.id}
-          className='m-8 flex flex-col items-center rounded-lg justify-between relative overflow-hidden w-[17em] border [box-shadow:2px_18px_42px_-22px_rgba(0,0,0,0.42)]'>
+          className='flex flex-col items-center rounded-lg justify-between relative overflow-hidden w-[17em] border border-slate-500/30 [box-shadow:2px_18px_42px_-22px_rgba(0,0,0,0.42)]'>
           {item.discount && (
             <span className='left-4 bg-red-600 rounded-[0_0_1em_1em] px-2 py-4 absolute text-slate-50 font-bold'>
               {item.discount}%

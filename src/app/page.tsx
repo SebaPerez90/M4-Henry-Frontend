@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import hero_img from '@/assets/hero-bg.jpg';
-import Card from '@/components/Card';
+import CardsContainer from '@/components/CardsContainer';
+import { Button } from 'antd';
 
 const Home = () => {
   return (
@@ -19,12 +20,10 @@ const Home = () => {
             facilis nobis aliquid fuga recusandae nulla dolores laudantium! Sit
             eius vitae officiis?
           </p>
-          <button className='p-4 rounded-xl bg-slate-50 font-semibold'>
-            submit btn
-          </button>
+          <Button size='large'>Comprá Ahora</Button>
         </header>
       </div>
-      <Card />
+      <CardsContainer />
     </>
   );
 };

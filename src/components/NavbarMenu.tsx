@@ -20,13 +20,13 @@ const NavbarMenu = () => {
           width={30}
           height={30}
         />
-        <span className='font-semibold font-serif italic'>
-          <strong className='text-xl text-blue-500'>G</strong>reen
-          <strong className='text-xl text-blue-500'>L</strong>ife
+        <span className='text-xl italic'>
+          <strong className='text-2xl text-blue-500'>G</strong>reen
+          <strong className='text-2xl text-blue-500'>L</strong>ife
         </span>
       </div>
       <div className='gap-5 relative left-10 flex flex-col justify-center items-center'>
-        <ul className='flex justify-center border border-[blue] w-max gap-5 '>
+        <ul className='flex justify-center w-max gap-5 '>
           <li className='border p-3 rounded-lg cursor-pointer'>
             <Link href={'/'}>home</Link>
           </li>
